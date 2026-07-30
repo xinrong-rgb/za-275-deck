@@ -177,9 +177,11 @@ p, li{font-family:var(--sans); font-size:35px; line-height:1.65; color:var(--ink
   margin-bottom:14px;
 }
 .su-box p:last-child{margin-bottom:0;}
+/* 讚偈：與其他經文段落一樣左齊＋2em 首行縮排，只用金棕色標示；
+   不置中（2026-07-30 使用者訂正：偈頌併為一段後置中不對，應同全文左齊）*/
 .su-box p.su-verse{
-  text-indent:0; text-align:center; color:var(--accent-2);
-  letter-spacing:4px; margin-bottom:6px;
+  text-indent:2em; text-align:left; color:var(--accent-2);
+  letter-spacing:1px; margin-bottom:14px;
 }
 /* 捲軸：靛藍拉桿 + 米杏軌道（書卷風）*/
 .su-box{scrollbar-width:thin; scrollbar-color:var(--accent) var(--bg-3);}
@@ -365,7 +367,7 @@ p, li{font-family:var(--sans); font-size:35px; line-height:1.65; color:var(--ink
   .sutra .su-sub .hint{display:block; margin-top:3px;}
   .su-box{padding:14px 14px 14px 12px; border-left-width:4px;}
   .su-box p{font-size:17px; line-height:1.8; letter-spacing:0; margin-bottom:10px;}
-  .su-box p.su-verse{letter-spacing:2px; margin-bottom:4px;}
+  .su-box p.su-verse{letter-spacing:0; margin-bottom:10px;}
   .su-box::-webkit-scrollbar{width:7px;}
   .su-box::-webkit-scrollbar-thumb{border-width:2px;}
   .su-foot{font-size:10px; margin-top:8px;}
